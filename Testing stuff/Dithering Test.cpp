@@ -35,7 +35,7 @@ void draw() {
   t++;
   for (uint8_t y = 0; y < LED_ROWS; y++) {
     for (uint8_t x = 0; x < LED_COLS; x++) {
-      leds[XY(x, y)] = CHSV(inoise8(x << 3, (y << 3) + t << 2), 255, 255);
+      leds[XY(x, y)] = CHSV(inoise8(x << 3, (y << 3) + t << 2), 255, 32 + inoise8(y << 3, x << 3, t << 2));
     }
     applyDithering();
   }

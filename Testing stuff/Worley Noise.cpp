@@ -40,21 +40,22 @@ void draw() {
     for (uint16_t y = 0; y < LED_ROWS; y++)
     {
       int32_t y8 = (int32_t)y << 8;
-      uint32_t m_dist1 = 0xffffffff, m_dist2 = 0xffffffff;
+      uint32_t m_dist1 = 0xffffffff, m_dist2 = 0xffffffff, m_i1 = 0;
       for (uint16_t i = 0; i < CELL_AM; i++) {
         int32_t dx = (int32_t)cell[i].x - x8;
         int32_t dy = (int32_t)cell[i].y - y8;
-        uint32_t d2 = (uint32_t)(dx * dx) + (uint32_t)(dy * dy);
+        uint32_t d2 = (dx * dx) + (dy * dy);
 
         if (d2 < m_dist1) {
           m_dist2 = m_dist1;
           m_dist1 = d2;
+          m_i1 = i;
         } else if (d2 < m_dist2) {
           m_dist2 = d2;
         }
       }
-      uint8_t val = constrain((int32_t)((sqrt(m_dist2) - sqrt(m_dist1))) >> 1, 0, 255);
-      leds[XY(x,y)] = CHSV(150, val, 255);
+      uint8_t val = constrain((int32_t)((sqrt(m_dist2) - sqrt(m_dist1))) >> 2, 0, 255);
+      leds[XY(x,y)] = CHSV(m_i1 << 4, 255, val);
     }
   }
   /*for(uint16_t i = 0; i < CELL_AM; i++)

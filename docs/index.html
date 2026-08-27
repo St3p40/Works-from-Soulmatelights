@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soulmatelights Sketchbook</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead wrap">
+  <dl class="stats">
+    <div><dt>Sketches</dt><dd id="stat-count">94</dd></div>
+    <div><dt>Folders</dt><dd id="stat-folders">8</dd></div>
+    <div><dt>Panel</dt><dd id="stat-panel">32×32</dd></div>
+  </dl>
+</header>
+
+<div class="toolbar">
+  <div class="wrap dirs" id="dirs"></div>
+  <div class="wrap controls">
+    <div class="field">
+      <span>Matrix</span>
+      <div class="seg" id="sizes">
+        <button type="button" data-n="16" aria-pressed="false">16</button>
+        <button type="button" data-n="24" aria-pressed="false">24</button>
+        <button type="button" data-n="32" aria-pressed="true">32</button>
+        <button type="button" data-n="48" aria-pressed="false">48</button>
+      </div>
+    </div>
+    <div class="field">
+      <button type="button" class="btn" id="play" aria-pressed="false">Pause</button>
+      <button type="button" class="btn" id="led" aria-pressed="true">LED dots</button>
+    </div>
+    <div class="spacer"></div>
+    <p class="fps" id="fps">&nbsp;</p>
+  </div>
+</div>
+
+<main class="wall wrap" id="wall"></main>
+
+<dialog class="detail" id="detail">
+  <div class="detail-head">
+    <div>
+      <h2 id="d-name"></h2>
+      <p id="d-note"></p>
+    </div>
+    <div class="spacer"></div>
+    <button type="button" class="btn" id="d-close">Close</button>
+  </div>
+  <div class="detail-body">
+    <div class="stage">
+      <div class="screen"><canvas id="d-canvas"></canvas></div>
+      <div class="params" id="d-params" hidden>
+        <div class="params-head">
+          <span>Settings</span>
+          <button type="button" class="btn tiny" id="d-reset">Reset</button>
+        </div>
+        <div id="d-fields"></div>
+      </div>
+    </div>
+    <div class="src">
+      <div class="src-head">
+        <span id="d-path"></span>
+        <a id="d-link" href="#" target="_blank" rel="noopener">View on GitHub &#8599;</a>
+      </div>
+      <pre id="d-src"><code id="d-code"></code></pre>
+    </div>
+  </div>
+</dialog>
+
+<script src="fastled.js"></script>
+<script src="effects.js"></script>
+<script src="sources.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
