@@ -1,0 +1,5 @@
+fastled/
+gen/
+fl/
+registry.cpp
+meta.js

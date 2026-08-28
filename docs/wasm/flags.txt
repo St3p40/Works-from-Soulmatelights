@@ -1,0 +1,6 @@
+-std=c++17 -w -O2
+-Wno-c++11-narrowing -Wno-narrowing -Wno-return-type -Wno-return-mismatch
+-Wno-implicit-int -Wno-writable-strings -Wno-int-conversion -Wno-invalid-offsetof
+-Wno-implicit-function-declaration -Wno-deprecated -Wno-unsequenced
+-Wno-tautological-constant-out-of-range-compare -Wno-constant-conversion
+-Wno-address-of-temporary -Wno-incompatible-pointer-types

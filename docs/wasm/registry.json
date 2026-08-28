@@ -1,0 +1,1135 @@
+[
+ {
+  "ns": "sk000",
+  "file": "Animation recreations/Loading.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk001",
+  "file": "Animation recreations/PSP.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "col",
+    "def": 150.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk002",
+  "file": "Any recreations/Bengal fire.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "GenPosVar",
+    "def": 0.0,
+    "kind": "define"
+   },
+   {
+    "k": "Bounce",
+    "def": 0.0,
+    "kind": "define"
+   },
+   {
+    "k": "GravityX",
+    "def": 0.0,
+    "kind": "define"
+   },
+   {
+    "k": "GravityY",
+    "def": 1.0,
+    "kind": "define"
+   },
+   {
+    "k": "SpeedDecY",
+    "def": 0.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk003",
+  "file": "Any recreations/DNA.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk004",
+  "file": "Any recreations/DistLines.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "COUNTS",
+    "def": 3.0,
+    "kind": "define"
+   },
+   {
+    "k": "SPEED",
+    "def": 1.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk005",
+  "file": "Any recreations/Drop.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk006",
+  "file": "Any recreations/Infinity.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk007",
+  "file": "Any recreations/Langton Ant.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "restart",
+    "def": 60.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk008",
+  "file": "Any recreations/Minesweeper.cpp",
+  "ok": false,
+  "params": [],
+  "why": "loops forever"
+ },
+ {
+  "ns": "sk009",
+  "file": "Any recreations/Mirage.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk010",
+  "file": "Any recreations/Puzzles.cpp",
+  "ok": false,
+  "params": []
+ },
+ {
+  "ns": "sk011",
+  "file": "Any recreations/S.a.n.d..cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "speed",
+    "def": 196.0,
+    "kind": "global"
+   },
+   {
+    "k": "var",
+    "def": 0.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk012",
+  "file": "Any recreations/Snow.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk013",
+  "file": "Any recreations/Soap Bubble recreation.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk014",
+  "file": "Any recreations/Spiro.cpp",
+  "ok": false,
+  "params": []
+ },
+ {
+  "ns": "sk015",
+  "file": "Any recreations/Swirl.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "Speed",
+    "def": 240.0,
+    "kind": "define"
+   },
+   {
+    "k": "DotsX2",
+    "def": 7.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk016",
+  "file": "Any recreations/Twinking.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk017",
+  "file": "Classic Demoeffects recreations/Amiga Boing!.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk018",
+  "file": "Classic Demoeffects recreations/Checkerboard.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk019",
+  "file": "Classic Demoeffects recreations/Drift rose pattern.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk020",
+  "file": "Classic Demoeffects recreations/Drift.cpp",
+  "ok": false,
+  "params": []
+ },
+ {
+  "ns": "sk021",
+  "file": "Classic Demoeffects recreations/Starfield.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk022",
+  "file": "Classic Demoeffects recreations/Xor Circles.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk023",
+  "file": "Other/Blobs.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "Speed",
+    "def": 255.0,
+    "kind": "define"
+   },
+   {
+    "k": "Am",
+    "def": 64.0,
+    "kind": "define"
+   },
+   {
+    "k": "regime",
+    "def": 1.0,
+    "kind": "define"
+   },
+   {
+    "k": "SubPixel",
+    "def": 1.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk024",
+  "file": "Other/Bombs.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "SpeedK",
+    "def": 6.0,
+    "kind": "global"
+   },
+   {
+    "k": "SpeedDecX",
+    "def": 1.0,
+    "kind": "global"
+   },
+   {
+    "k": "FadeSpK",
+    "def": 16.0,
+    "kind": "global"
+   },
+   {
+    "k": "Board",
+    "def": 1.0,
+    "kind": "global"
+   },
+   {
+    "k": "limiter",
+    "def": 383.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk025",
+  "file": "Other/Crazy bees.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk026",
+  "file": "Other/Fire.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "scale",
+    "def": 64.0,
+    "kind": "global"
+   },
+   {
+    "k": "speed",
+    "def": 92.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk027",
+  "file": "Other/Flags.cpp",
+  "ok": false,
+  "params": [],
+  "why": "loops forever"
+ },
+ {
+  "ns": "sk028",
+  "file": "Other/Ghost Rider.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "Speed",
+    "def": 255.0,
+    "kind": "define"
+   },
+   {
+    "k": "reseting",
+    "def": 10.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk029",
+  "file": "Other/Gyroscope.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk030",
+  "file": "Other/Holiday lights.cpp",
+  "ok": false,
+  "params": []
+ },
+ {
+  "ns": "sk031",
+  "file": "Other/Lost lands.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk032",
+  "file": "Other/Plasm ball.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk033",
+  "file": "Other/Plasma_ball.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk034",
+  "file": "Other/Racer.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "straightLineDir",
+    "def": 1.0,
+    "kind": "global"
+   },
+   {
+    "k": "FADE_KOEF",
+    "def": 0.5,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk035",
+  "file": "Other/SmokeWaves.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "speed",
+    "def": 255.0,
+    "kind": "define"
+   },
+   {
+    "k": "scale",
+    "def": 8.0,
+    "kind": "define"
+   },
+   {
+    "k": "Clr",
+    "def": 0.0,
+    "kind": "define"
+   },
+   {
+    "k": "SubPix",
+    "def": 1.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk036",
+  "file": "Other/Space Ships.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk037",
+  "file": "Other/Spider.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "Speed",
+    "def": 240.0,
+    "kind": "define"
+   },
+   {
+    "k": "Koef",
+    "def": 10.0,
+    "kind": "define"
+   },
+   {
+    "k": "lines",
+    "def": 7.0,
+    "kind": "define"
+   },
+   {
+    "k": "Color",
+    "def": 1.0,
+    "kind": "define"
+   },
+   {
+    "k": "Fader",
+    "def": 64.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk038",
+  "file": "Other/Starships(with smooth direction change).cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk039",
+  "file": "Other/Walking machine.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk040",
+  "file": "Other/Wandering souls.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "Speed",
+    "def": 255.0,
+    "kind": "define"
+   },
+   {
+    "k": "Scale",
+    "def": 8.0,
+    "kind": "define"
+   },
+   {
+    "k": "Run",
+    "def": 2.0,
+    "kind": "define"
+   },
+   {
+    "k": "lamp",
+    "def": 0.0,
+    "kind": "define"
+   },
+   {
+    "k": "trace",
+    "def": 1.0,
+    "kind": "define"
+   },
+   {
+    "k": "reseting",
+    "def": 10.0,
+    "kind": "define"
+   },
+   {
+    "k": "subPixel",
+    "def": 1.0,
+    "kind": "define"
+   },
+   {
+    "k": "broad",
+    "def": 0.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk041",
+  "file": "Other/Wave.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk042",
+  "file": "Other/Wind.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk043",
+  "file": "Particle System/Fire(particle system).cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "speed",
+    "def": 255.0,
+    "kind": "global"
+   },
+   {
+    "k": "SpeedDecY",
+    "def": 0.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk044",
+  "file": "Particle System/Jumping balls.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "Board",
+    "def": 1.0,
+    "kind": "define"
+   },
+   {
+    "k": "FADE_KOEF",
+    "def": 10.0,
+    "kind": "global"
+   },
+   {
+    "k": "SpeedDecY",
+    "def": 0.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk045",
+  "file": "Particle System/Lava(particle system).cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "FADE_KOEF",
+    "def": 1.2,
+    "kind": "global"
+   },
+   {
+    "k": "SpeedK",
+    "def": 2.0,
+    "kind": "global"
+   },
+   {
+    "k": "SpeedDecY",
+    "def": 0.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk046",
+  "file": "Particle System/Particle system.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "FADE_KOEF",
+    "def": 1.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk047",
+  "file": "Particle System/Wind(particle system).cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "FADE_KOEF",
+    "def": 1.2,
+    "kind": "global"
+   },
+   {
+    "k": "SpeedK",
+    "def": 2.0,
+    "kind": "global"
+   },
+   {
+    "k": "SpeedDecY",
+    "def": 0.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk048",
+  "file": "Radial Effects/Flower.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "speed",
+    "def": 1.0,
+    "kind": "static"
+   }
+  ]
+ },
+ {
+  "ns": "sk049",
+  "file": "Radial Effects/Hypnosis.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk050",
+  "file": "Radial Effects/Lotus.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "petals",
+    "def": 5.0,
+    "kind": "define"
+   },
+   {
+    "k": "speed",
+    "def": 2.0,
+    "kind": "static"
+   }
+  ]
+ },
+ {
+  "ns": "sk051",
+  "file": "Radial Effects/Mariana Trench.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "speed",
+    "def": 8.0,
+    "kind": "static"
+   }
+  ]
+ },
+ {
+  "ns": "sk052",
+  "file": "Radial Effects/Octopus.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "legs",
+    "def": 3.0,
+    "kind": "define"
+   },
+   {
+    "k": "speed",
+    "def": 3.0,
+    "kind": "static"
+   }
+  ]
+ },
+ {
+  "ns": "sk053",
+  "file": "Radial Effects/Odd lands.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "speed",
+    "def": 1.0,
+    "kind": "static"
+   }
+  ]
+ },
+ {
+  "ns": "sk054",
+  "file": "Radial Effects/Radial Pattern.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "speed",
+    "def": 2.0,
+    "kind": "static"
+   }
+  ]
+ },
+ {
+  "ns": "sk055",
+  "file": "Radial Effects/RadialFire.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "scaleX",
+    "def": 16.0,
+    "kind": "static"
+   },
+   {
+    "k": "scaleY",
+    "def": 1.0,
+    "kind": "static"
+   },
+   {
+    "k": "speed",
+    "def": 24.0,
+    "kind": "static"
+   }
+  ]
+ },
+ {
+  "ns": "sk056",
+  "file": "Radial Effects/RadialNuclearNoise.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "speed",
+    "def": 8.0,
+    "kind": "static"
+   }
+  ]
+ },
+ {
+  "ns": "sk057",
+  "file": "Radial Effects/RadialWave.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "speed",
+    "def": 1.0,
+    "kind": "static"
+   }
+  ]
+ },
+ {
+  "ns": "sk058",
+  "file": "Radial Effects/Rainbow tunel.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "scaleX",
+    "def": 4.0,
+    "kind": "static"
+   },
+   {
+    "k": "scaleY",
+    "def": 4.0,
+    "kind": "static"
+   },
+   {
+    "k": "speed",
+    "def": 2.0,
+    "kind": "static"
+   }
+  ]
+ },
+ {
+  "ns": "sk059",
+  "file": "Testing stuff/2048.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk060",
+  "file": "Testing stuff/Alone in the void.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "scale",
+    "def": 16.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk061",
+  "file": "Testing stuff/BlackHole.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk062",
+  "file": "Testing stuff/Candle.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk063",
+  "file": "Testing stuff/Clouds.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk064",
+  "file": "Testing stuff/Color Frizzles.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk065",
+  "file": "Testing stuff/CrazyBee.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk066",
+  "file": "Testing stuff/Curve.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "subPix",
+    "def": 0.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk067",
+  "file": "Testing stuff/Dithering Test.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk068",
+  "file": "Testing stuff/GraphDrawing.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "MIN_BORDER",
+    "def": 0.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk069",
+  "file": "Testing stuff/Lava lake.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk070",
+  "file": "Testing stuff/Lines.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk071",
+  "file": "Testing stuff/Little animation image decoder.cpp",
+  "ok": false,
+  "params": []
+ },
+ {
+  "ns": "sk072",
+  "file": "Testing stuff/Monster Face.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk073",
+  "file": "Testing stuff/NoiseMove Test.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk074",
+  "file": "Testing stuff/NoiseV2.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk075",
+  "file": "Testing stuff/NoiseWithSettings.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "Speed",
+    "def": 10.0,
+    "kind": "global"
+   },
+   {
+    "k": "Scale",
+    "def": 30.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk076",
+  "file": "Testing stuff/PoolNoise.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "Sat",
+    "def": 255.0,
+    "kind": "define"
+   },
+   {
+    "k": "Hue",
+    "def": 150.0,
+    "kind": "define"
+   },
+   {
+    "k": "Scale",
+    "def": 40.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk077",
+  "file": "Testing stuff/Pseudo water in jar.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk078",
+  "file": "Testing stuff/Rotating rainbow Test.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk079",
+  "file": "Testing stuff/Sort methods.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk080",
+  "file": "Testing stuff/Special Camera Mode.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk081",
+  "file": "Testing stuff/Torch.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "HitPoints",
+    "def": 0.0,
+    "kind": "define"
+   },
+   {
+    "k": "Color",
+    "def": 40.0,
+    "kind": "define"
+   },
+   {
+    "k": "POV",
+    "def": 75.0,
+    "kind": "define"
+   },
+   {
+    "k": "povAngle",
+    "def": 1.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk082",
+  "file": "Testing stuff/Ugly Caustic.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "scale",
+    "def": 24.0,
+    "kind": "define"
+   },
+   {
+    "k": "bri",
+    "def": 128.0,
+    "kind": "define"
+   },
+   {
+    "k": "speed",
+    "def": 8.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk083",
+  "file": "Testing stuff/WavingCells.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk084",
+  "file": "Testing stuff/Worley Noise.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk085",
+  "file": "Testing stuff/Zooming Test.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "zoomspeed",
+    "def": 128.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk086",
+  "file": "Testing stuff/drawBars.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "ROT",
+    "def": 0.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk087",
+  "file": "Testing stuff/ownVerOFTixyLand.cpp",
+  "ok": false,
+  "params": []
+ },
+ {
+  "ns": "sk088",
+  "file": "Testing stuff/spring cellular automata Test.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk089",
+  "file": "Updated existing Effects/Maze.cpp",
+  "ok": true,
+  "params": []
+ },
+ {
+  "ns": "sk090",
+  "file": "Updated existing Effects/Metaballs UPD.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "scale",
+    "def": 160.0,
+    "kind": "define"
+   },
+   {
+    "k": "speed",
+    "def": 0.5,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk091",
+  "file": "Updated existing Effects/Patterns.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "NEW_TIME",
+    "def": 25.0,
+    "kind": "define"
+   },
+   {
+    "k": "SubPix",
+    "def": 0.0,
+    "kind": "define"
+   },
+   {
+    "k": "XSpeed",
+    "def": 0.2,
+    "kind": "define"
+   },
+   {
+    "k": "YSpeed",
+    "def": 0.1,
+    "kind": "define"
+   },
+   {
+    "k": "size",
+    "def": 1.0,
+    "kind": "define"
+   },
+   {
+    "k": "SHIFT_HUE",
+    "def": 1.0,
+    "kind": "define"
+   },
+   {
+    "k": "MAX_PATTERN",
+    "def": 38.0,
+    "kind": "define"
+   }
+  ]
+ },
+ {
+  "ns": "sk092",
+  "file": "Updated existing Effects/Sending.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "regime",
+    "def": 1.0,
+    "kind": "define"
+   },
+   {
+    "k": "speed",
+    "def": 5.0,
+    "kind": "global"
+   }
+  ]
+ },
+ {
+  "ns": "sk093",
+  "file": "Updated existing Effects/Sinusoid Update.cpp",
+  "ok": true,
+  "params": [
+   {
+    "k": "regime",
+    "def": 0.0,
+    "kind": "define"
+   },
+   {
+    "k": "speed",
+    "def": 30.0,
+    "kind": "global"
+   },
+   {
+    "k": "scale",
+    "def": 1.0,
+    "kind": "global"
+   },
+   {
+    "k": "amplitude",
+    "def": 200.0,
+    "kind": "global"
+   }
+  ]
+ }
+]

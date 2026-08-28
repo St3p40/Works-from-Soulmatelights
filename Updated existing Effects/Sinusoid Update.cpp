@@ -7,6 +7,8 @@
 
 bool loadingFlag = true;
 
+#define regime 0 //0-Sinusoid I/1-II/2-III/3-IV
+
 uint8_t speed = 30;
 uint8_t scale = 1;
 uint8_t amplitude = 200;
@@ -42,83 +44,86 @@ void draw() {
   sshft[1].shiftY = float(e_s3_size * (sin16(e_s3_speed * 170.3884 * time_shift))) / 32767.0;
   sshft[2].shiftX = float(e_s3_size * (sin16(e_s3_speed * 68.8107 * time_shift))) / 32767.0;
   sshft[2].shiftY = float(e_s3_size * (sin16(e_s3_speed * 65.534 * time_shift))) / 32767.0;
-  //Sinusoid I
-  for (uint8_t y = 0; y < HEIGHT; y++) {
-    for (uint8_t x = 0; x < WIDTH; x++) {
-      CRGB color;
-      float cx = (y - semiHeightMajor) + sshft[0].shiftX; // the 8 centers the middle on a 16x16
-      float cy = (x - semiWidthMajor) + sshft[0].shiftY;
-      int8_t v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
-      color.r = ~v;
-      
-      cx = (y - semiHeightMajor) + sshft[1].shiftX;
-      cy = (x - semiWidthMajor) + sshft[1].shiftY;
-      v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
-      color.b = ~v;
-      leds[XY(x,y)]=color;
-    }
-  }
+  switch (regime) {
+    case 0: { //Sinusoid I
+      for (uint8_t y = 0; y < HEIGHT; y++) {
+        for (uint8_t x = 0; x < WIDTH; x++) {
+          CRGB color;
+          float cx = (y - semiHeightMajor) + sshft[0].shiftX; // the 8 centers the middle on a 16x16
+          float cy = (x - semiWidthMajor) + sshft[0].shiftY;
+          int8_t v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
+          color.r = ~v;
 
-  //it's sinusoid II
-  /*for (uint8_t y = 0; y < HEIGHT; y++) {
-    for (uint8_t x = 0; x < WIDTH; x++) {
-      CRGB color;
-      float cx = (y - semiHeightMajor) + sshft[0].shiftX; // the 8 centers the middle on a 16x16
-      float cy = (x - semiWidthMajor) + sshft[0].shiftY;
-      int8_t change = time_shift * 0.1 * e_s3_speed;
-      int8_t v = change + sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
-      color.r = ~v;
-      cx = (y - semiHeightMajor) + sshft[1].shiftX;
-      cy = (x - semiWidthMajor) + sshft[1].shiftY;
-      change = time_shift * 0.09 * e_s3_speed;
-      v = change + sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
-      color.r = (uint8_t(~v) > color.r)? ~v : color.r;
-      color.g = uint8_t(~v)/2;
-      leds[XY(x, y)] = color;
-    }
-  }*/
-  
-  //Sinusoid III
-  /*for (uint8_t y = 0; y < HEIGHT; y++) {
-    for (uint8_t x = 0; x < WIDTH; x++) {
-      
-      float cx = (y - semiHeightMajor) + sshft[0].shiftX; // the 8 centers the middle on a 16x16
-      float cy = (x - semiWidthMajor) + sshft[0].shiftY;
-      int8_t v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
-      leds[XY(x, y)].r = ~v;
-      
-      cx = (y - semiHeightMajor) + sshft[1].shiftX;
-      cy = (x - semiWidthMajor) + sshft[1].shiftY;
-      v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
-      leds[XY(x, y)].g = ~v;
-      
-      cx = (y - semiHeightMajor) + sshft[2].shiftX;
-      cy = (x - semiWidthMajor) + sshft[2].shiftX;
-      v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
-      leds[XY(x, y)].b = ~v;
-      
-    }
-  }*/
-  
-  //Sinusoid IV
-  /*for (uint8_t y = 0; y < HEIGHT; y++) {
-    for (uint8_t x = 0; x < WIDTH; x++) {
-      
-      float cx = (y - semiHeightMajor) + sshft[0].shiftX; // the 8 centers the middle on a 16x16
-      float cy = (x - semiWidthMajor) + sshft[0].shiftY;
-      int8_t v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy))) + (time_shift * e_s3_speed));
-      leds[XY(x, y)].b = ~v;
-      
-      cx = (y - semiHeightMajor) + sshft[1].shiftX;
-      cy = (x - semiWidthMajor) + sshft[1].shiftY;
-      v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy))) + (time_shift * e_s3_speed));
-      leds[XY(x, y)].g = ~v;
-      
-      cx = (y - semiHeightMajor) + sshft[2].shiftX;
-      cy = (x - semiWidthMajor) + sshft[2].shiftX;
-      v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy))) + (time_shift * e_s3_speed));
-      leds[XY(x, y)].r = ~v;
-      
-    }
-  }*/
+          cx = (y - semiHeightMajor) + sshft[1].shiftX;
+          cy = (x - semiWidthMajor) + sshft[1].shiftY;
+          v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
+          color.b = ~v;
+          leds[XY(x, y)] = color;
+        }
+      }
+    } break;
+
+    case 1: { //Sinusoid II
+      for (uint8_t y = 0; y < HEIGHT; y++) {
+        for (uint8_t x = 0; x < WIDTH; x++) {
+          CRGB color;
+          float cx = (y - semiHeightMajor) + sshft[0].shiftX;
+          float cy = (x - semiWidthMajor) + sshft[0].shiftY;
+          int8_t change = time_shift * 0.1 * e_s3_speed;
+          int8_t v = change + sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
+          color.r = ~v;
+
+          cx = (y - semiHeightMajor) + sshft[1].shiftX;
+          cy = (x - semiWidthMajor) + sshft[1].shiftY;
+          change = time_shift * 0.09 * e_s3_speed;
+          v = change + sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
+          color.r = (uint8_t(~v) > color.r) ? ~v : color.r;
+          color.g = uint8_t(~v) / 2;
+          leds[XY(x, y)] = color;
+        }
+      }
+    } break;
+
+    case 2: { //Sinusoid III
+      for (uint8_t y = 0; y < HEIGHT; y++) {
+        for (uint8_t x = 0; x < WIDTH; x++) {
+          float cx = (y - semiHeightMajor) + sshft[0].shiftX;
+          float cy = (x - semiWidthMajor) + sshft[0].shiftY;
+          int8_t v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
+          leds[XY(x, y)].r = ~v;
+
+          cx = (y - semiHeightMajor) + sshft[1].shiftX;
+          cy = (x - semiWidthMajor) + sshft[1].shiftY;
+          v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
+          leds[XY(x, y)].g = ~v;
+
+          cx = (y - semiHeightMajor) + sshft[2].shiftX;
+          cy = (x - semiWidthMajor) + sshft[2].shiftX;
+          v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy)));
+          leds[XY(x, y)].b = ~v;
+        }
+      }
+    } break;
+
+    case 3: { //Sinusoid IV
+      for (uint8_t y = 0; y < HEIGHT; y++) {
+        for (uint8_t x = 0; x < WIDTH; x++) {
+          float cx = (y - semiHeightMajor) + sshft[0].shiftX;
+          float cy = (x - semiWidthMajor) + sshft[0].shiftY;
+          int8_t v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy))) + (time_shift * e_s3_speed);
+          leds[XY(x, y)].b = ~v;
+
+          cx = (y - semiHeightMajor) + sshft[1].shiftX;
+          cy = (x - semiWidthMajor) + sshft[1].shiftY;
+          v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy))) + (time_shift * e_s3_speed);
+          leds[XY(x, y)].g = ~v;
+
+          cx = (y - semiHeightMajor) + sshft[2].shiftX;
+          cy = (x - semiWidthMajor) + sshft[2].shiftX;
+          v = sin8(_scale * sqrt(( cx * cx) + ( cy * cy))) + (time_shift * e_s3_speed);
+          leds[XY(x, y)].r = ~v;
+        }
+      }
+    } break;
+  }
 }
