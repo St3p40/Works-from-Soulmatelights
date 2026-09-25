@@ -11,7 +11,9 @@ void draw() {
     uint8_t bh1 = uint8_t(h1 >> 8);
     uint8_t bh2 = uint8_t(h2 >> 8);
     for (uint8_t y = 0; y < LED_ROWS; y++) {
-      leds[XY(x, y)] = CHSV(col, map(y + x, 0, LED_ROWS + LED_COLS - 1, 255, 32), map(x - (LED_ROWS - 1 - y), 0, LED_COLS - 1, 196, 255)) + CHSV(0, 0, (y < bh1) ? map(y, 0, bh1, 64, 256) : 0) + CHSV(0, 0, (y < bh2) ? map(y, 0, bh2, 64, 256) : 0);
+      leds[XY(x, y)] = CHSV(col, map(y + x, 0, LED_ROWS + LED_COLS - 1, 255, 32), map(x - (LED_ROWS - 1 - y), 0, LED_COLS - 1, 196, 255));
+      if(y < bh1) leds[XY(x, y)] += CHSV(0, 0, map(y << 8, 0, h1, 0, 224));
+      if(y < bh2) leds[XY(x, y)] += CHSV(0, 0, map(y << 8, 0, h2, 0, 224));
     }
     leds[XY(x, bh1)] += CHSV(0, 0, (h1 % 256));
     leds[XY(x, bh2)] += CHSV(0, 0, (h2 % 256));
